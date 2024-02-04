@@ -1,0 +1,342 @@
+/* PROJECT SECTION CSS*/
+.main-text{
+    padding-top:10px;
+    margin: 100px 0;
+}
+.main-text h1{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    margin: 50px 40px;
+
+}
+.portfolio-content{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.row img{
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 8px; 
+    transition: transform 0.5s;
+
+
+}
+.layer{
+    width: 90%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1),rgb(43, 135, 181));
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h4{
+    color: rgb(26, 11, 78) ;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-decoration: none;   
+}
+a:link{
+    text-decoration: none;
+}
+.layer p{
+    color: black;
+    font-size: 1rem;
+    line-height: 1.8;
+
+
+}
+.layer i{
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+.main-text h2{
+    text-align: center;
+    margin: 40px 0;
+    color: rgb(214, 194, 222);
+}
+
+
+
+/* techinical skills section
+.myskills{
+    text-align: center;
+    margin-bottom: 0;
+
+}*/
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 70px 0;
+    margin-left: 70px;
+    margin-bottom: 50px;
+
+}
+.container2{
+    width: 600px;
+    height: 500px;
+    padding: 70px 0;
+    margin-left:170px;
+
+}
+.skills hr{
+   background-color: rgb(26, 11, 78);
+
+}
+
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness:5px ;
+     margin-bottom: 50px;
+
+}
+.container2 .heading1{
+    margin-bottom: 100px;
+}
+
+.bar{
+    font-size: 23px;
+}
+.technical-bar .bar{
+    margin: 30px 0;
+}
+.technical-bar .bar:first-child{
+    margin-top: 0;
+    }
+    .technical-bar .bar:last-child{
+      margin-bottom: 0;
+    }
+.technical-bar .bar.info{
+    margin-bottom: 5px;
+}
+.technical-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(233, 196, 247);
+    animation:showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.technical-bar .bar .Progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color:rgba(0, 0, 0, 0.8);
+    animation:animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform:scaleX(0);
+    transform-origin: left;
+
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.technical-bar .bar .Progress-line span{
+    height: 100%;
+    background-color:rgb(208, 0, 255);
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform:scaleX(0);
+    transform-origin: left ;
+}
+.Progress-line.html span{
+    width: 90%;
+}
+.Progress-line.CSS span{
+    width: 70%;
+}
+.Progress-line.JavaScript span{
+    width: 50%;
+}
+.Progress-line.Python span{
+    width: 60%;
+}
+.Progress-line.C-cpp span{
+    width: 60%;
+}
+.Progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top:-28px;
+    right:-20px;
+    animation:  showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.Progress-line.html span::after{
+    content: "90%";
+}
+.Progress-line.CSS span::after{
+    content: "70%";
+}
+.Progress-line.JavaScript span::after{
+    content: "50%";
+}
+.Progress-line.Python span::after{
+    content: "60%";
+}
+.Progress-line.C-cpp span::after{
+    content: "60%";
+}
+.Progress-line span::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border:  7px solid transparent;
+  border-bottom-width:0px ;
+  border-right-width: 0px;
+  border-top-color: rgb(0, 0, 0);
+  top: -10px;
+  right: 0;
+  animation:showText 0.5s 1.5s linear forwards;
+  opacity: 0;    
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+    
+}
+.circular-bars{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+.circular-bars .circular-progress{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position:relative;
+
+}
+.circular-bars .circular-progress svg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.circular-bars .circular-progress .progress-bar{
+    stroke-width: 10;
+    stop-color: rgba(0, 0, 0);
+    fill: transparent;
+    stroke-dasharray:502;
+    stroke-dashoffset:502;
+    stroke-linecap: round;
+    animation:animate-bar 1s linear forwards;
+
+}
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke:#0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset:502 ;
+    stroke-linecap: round;
+
+}
+.path-1{animation:animate-path1 1s 1s linear forwards}
+.path-2{animation:animate-path2 1s 1s linear forwards}
+.path-3{animation:animate-path3 1s 1s linear forwards}
+.path-4{animation:animate-path4 1s 1s linear forwards}
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+    
+}
+@keyframes animate-path2 {
+    100%{
+        stroke-dashoffset: 175;
+    }
+    
+}
+@keyframes animate-path3 {
+    100%{
+        stroke-dashoffset: 150;
+    }
+    
+}
+@keyframes animate-path4 {
+    100%{
+        stroke-dashoffset: 75;;
+    }
+    
+}
+.circular-progress .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    font-size:17px ;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards ;
+    opacity: 0;
+}
+
+.circular-progress .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+
+}
