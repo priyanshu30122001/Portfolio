@@ -99,20 +99,22 @@ a:link{
 .skills{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
 }
 .container1{
     width: 600px;
-    height: 500px;
+    height: 600px;
     padding: 70px 0;
-    margin-left: 70px;
     margin-bottom: 50px;
+    overflow: hidden;
 
 }
 .container2{
     width: 600px;
     height: 500px;
     padding: 70px 0;
-    margin-left:170px;
+    
 
 }
 .skills hr{
@@ -140,10 +142,10 @@ a:link{
 }
 .technical-bar .bar:first-child{
     margin-top: 0;
-    }
-    .technical-bar .bar:last-child{
+}
+.technical-bar .bar:last-child{
       margin-bottom: 0;
-    }
+}
 .technical-bar .bar.info{
     margin-bottom: 5px;
 }
