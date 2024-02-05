@@ -1,6 +1,7 @@
 /*Header section */
 header{
   color: white;
+  
 }
 .right-section{
   display: flex;
@@ -40,7 +41,11 @@ nav ul li a{
 }
 nav ul li a:hover{
   color:rgb(92, 92, 228);
-  font-size: 1.06rem;
+  font-size: 1.2rem;
+
+}
+.nav-toggle{
+  display: none;
 
 }
 /* Footer section */
