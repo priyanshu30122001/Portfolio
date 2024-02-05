@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="media-queries.css">
+    
     <title>Portfolio </title>
     <style>
    
@@ -20,11 +22,11 @@
     <header>
       <nav>
         <div class="right-section">
-            <div><img class="profile_pic" src="images/IMG_1601.JPG" alt=""></div>
+            
             <div>Priyanshu's Portfolio</div>
-          </div>
-        <div class="left-section">
-          <ul>
+        </div>
+        <div class="left-section" id="menu">
+          <ul class="menu">
               <li><a href="#Home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#Project">Projects</a></li>
@@ -32,11 +34,14 @@
           </ul>
 
         </div>
+        <a href="#" class="nav-toggle " id="nav-toggle">
+          <i class='bx bx-menu bx-md' style="color: aliceblue;"></i>
+        </a>
       </nav>
     </header>
     <main>
         <section class="firstsection" id="Home">
-          <div class="leftsection">Hi my name is <span>Priyanshu </span>  and I am a passionate
+          <div class="leftsection">Hi,my name is <span>Priyanshu </span>  and I am a passionate
              <p> <span id="element"></span> </p>
                 <div class="buttons">
                   <a href="Priyanshu resume.pdf" download="Priyanshu resume">
@@ -76,6 +81,7 @@
                           </div>
                         </div>  
                        <div class="box"> 
+                            <h2>Education</h2>
                           <div class="vline">
                             <img class="top-image" src="images/highschool.webp" alt="">
                             <div class="vertical-title"> HIGH SCHOOL</div>
@@ -155,7 +161,7 @@
               </div>
 
             </div>
-             <h2> Click on the headind to visit the projects</h2>
+             <h2> Click on the heading to visit the projects</h2>
           
         </section>
         <hr>
@@ -261,16 +267,16 @@
           <h4>Get in Touch</h4>
            <p>Here are my personal contact info if you what to cantact</p>
             <div class="socail-media ">
-              <a href="https://github.com/priyanshu30122001"><i class='bx bxl-github' ></i></a>
-              <a href="https://www.instagram.com/priyanshupadeliya?igsh=MWp2MW1rbGR6Y3N1eA%3D%3D&utm_source=qr"><i class='bx bxl-instagram' ></i></a>
-              <i class='bx bx-phone' >7289813010</i>
+              <a href="https://github.com/priyanshu30122001"><i class='bx bxl-github bx-lg' ></i></a>
+              <a href="https://www.instagram.com/priyanshupadeliya?igsh=MWp2MW1rbGR6Y3N1eA%3D%3D&utm_source=qr"><i class='bx bxl-instagram bx-lg'  ></i></a>
+              <i class='bx bx-phone bx-md' >7289813010</i>
             </div>
         </div>
         <div class="second">
            <div class="back" >
             <div class="front">
                 <p>priyanshupadeliya27@gmail.com</p>
-                <i class='bx bxl-gmail' style="color: rgb(212, 147, 230); border: 1px solid rgb(212,147, 230); border-radius: 2px; ;"></i>
+                <i class='bx bxl-gmail bx-md' style="color: rgb(212, 147, 230); border: 1px solid rgb(212,147, 230); border-radius: 2px; padding:1px 2px;"></i>
             </div></div>
         </div>
   
@@ -284,7 +290,14 @@
         typeSpeed: 200,
       });
     </script>
-
+    <script>
+      const toggleButton = document.getElementById('nav-toggle');
+      const menu = document.getElementById('menu');
+      
+       toggleButton.addEventListener('click',()=>{
+        menu.classList.toggle('active');
+       })
+       </script>
   </body>
  
 </body>
