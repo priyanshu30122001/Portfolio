@@ -6,6 +6,7 @@
     color: white;
     background-color:rgb(26, 11, 78) ;
     font-family: poppins;
+    
   }
 
 main hr{
@@ -47,6 +48,28 @@ span{
 
     color:rgb(170,107,228);
 }
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+
+
+}
+.resume,.github{
+    width: 150px;
+    background-color:rgb(26, 11, 78);
+    color:rgb(172, 152, 202);
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 10px;
+}
+.resume:hover, .github:hover{
+    background-color:rgba(0,0,0,0.3);
+    box-shadow:5px 3px 3px rgba(0,0,0, 0.6);
+
+
+}
 
 
 
@@ -74,7 +97,7 @@ margin-right: 10px;
 .secondsection{
    
     max-width: 80vw;
-    margin: auto;
+    margin: 30px auto;
     height: 90vh;
 
 }
@@ -84,8 +107,9 @@ margin-right: 10px;
 
 }
 .secondsection h1{
+    color: #9c97f1;
     font-size: 1.6rem;
-   margin:10px 0;
+    margin:10px 0;
     
 }
 .secondsection .box{
@@ -96,6 +120,13 @@ margin-right: 10px;
     display: flex;
     justify-content: space-between;
 
+}
+.box h2{
+    font-size: 2.5rem;
+    color: #5955a2;
+    position: relative;
+    top: -50px;
+    
 }
 .secondsection .vline {
     background-color: white;
@@ -113,74 +144,49 @@ margin-right: 10px;
     left:-40px;
 }
 .vertical-title{
-    font-size: 23px;
+    font-size: 2rem;
     color: rgb(177, 177, 255);
     position: relative;
-    top: 12px;
+    top: 5px;
     left: -75px;
-    width: 170px;
+    width: 250px;
     margin: 10px 0;
 }
 .vertical-title:hover{
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 .vertical-desc{
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 180px;
+    width: 280px;
     position: relative;
-    top: 6px;
-    left: -80px;
+    top: -10px;
+    left: -110px;
 }
 .vertical-title1{
-    font-size: 23px;
+    font-size: 1.8rem;
     color: rgb(177, 177, 255);
     position: relative;
-    top: 12px;
-    left: -150px;
+    top: 3px;
+    left: -100px;
     width: 350px;
     margin: 10px 0;
 }
 .vertical-title1:hover{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 .vertical-desc1{
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 312px;
     position: relative;
-    top: 6px;
-    left: -110px;
-}
-.buttons{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
-
-
-}
-.resume,.github{
-    width: 150px;
-    background-color:rgb(26, 11, 78);
-    color:rgb(172, 152, 202);
-    border: 2px solid white;
-    cursor: pointer;
-    padding: 10px;
-}
-.resume:hover, .github:hover{
-    background-color:rgba(0,0,0,0.3);
-    box-shadow:5px 3px 3px rgba(0,0,0, 0.6);
-
-
+    top: -10px;
+    left: -152px;
 }
 
 
-@media screen and (max-width:320px )and(max-width:425px)  {
-    body{
-        background-color: #9c97f1;
-    }
-    
-}
+
